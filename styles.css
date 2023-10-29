@@ -5,12 +5,13 @@
   text-decoration:none;
 }
 body{
+   width: fit-content; 
   font-family:'Poppins', sans-serif;
   padding-right:50px;
 background-color: #fff44f;
 background-image: linear-gradient(360deg, #fff44f 25%,#f9ff60  50%);
 }
-header{
+.heading{
   text-align: center;
   margin-left: 275px;
   font-size: 22px;
@@ -50,12 +51,18 @@ list-style:none;
   color:white;
   margin-left:8px;
 }
-.nav-links{
+.nav-list{
   display: block;
   height:100%;
   width:100%;
   line-height:60px;
-} 
+}
+@media (width < 600px) {
+  body{
+    font-size:18px;
+  }
+}
+
 
 *::-webkit-scrollbar {
   width: 12px;
@@ -71,68 +78,7 @@ background: linear-gradient(315deg,gray 25%, #f5f7fa 64%);
   border-radius: 20px;
  
 }
-.intro p{
-  margin-left:300px;
-  padding-left:30px;
-  padding-right:15px;
-  font-size:18px;
-  font-weight:500;
-}
 
-.intro h2{
-  margin-left:285px;
-  padding-left:30px;
-  padding-top:30px;
-  margin-bottom:10px;
-}
-.intro li{
-   padding-top:40px;
-   margin-left:400px;
-   padding-right:35px;
-   font-size:17px;
-}
-.know h2{
-  margin-left:285px;
-  padding-left:30px;
-   padding-top:30px;
-}
-.know li{
-  padding-top:40px;
-   margin-left:400px;
-   padding-right:35px;
-   font-size:17px;
-   margin-bottom: -15px;
-}
-.know legend{
-  padding-left:15px;
-  margin:15px -5px -10px 325px;
-}
-.java h2{
-  margin-left:285px;
-  padding-left:30px;
-   padding-top:50px;
-   margin-bottom:10px;
-}
-.java p{
-  margin-left:300px;
-  padding-left:40px;
-  padding-right:15px;
-  font-size:18px;
-  font-weight:500;
-}
-.hello h2{
-  margin-left:285px;
-  padding-left:30px;
-   padding-top:50px;
-   margin-bottom:10px;
-}
-.hello p{
-   margin-left:300px;
-  padding-left:40px;
-  padding-right:15px;
-  font-size:18px;
-  font-weight:500;
-}
 code{
     display: block;
     text-align: left;
@@ -150,37 +96,19 @@ code{
     margin-top:25px;
     margin-bottom:25px;
 }
-.var h2{
-   margin-left:285px;
-  padding-left:30px;
-   padding-top:50px;
-   margin-bottom:10px;
-}
-.var p{
-  margin-left:300px;
-  padding-left:40px;
-  padding-right:15px;
-  font-size:18px;
-  font-weight:500;
-}
-.devar h2{
-  margin-left:285px;
-  padding-left:30px;
-   padding-top:50px;
-   margin-bottom:10px;
-}
-.devar p{
-  margin-left:300px;
-  padding-left:40px;
-  padding-right:15px;
-  font-size:18px;
-  font-weight:500;
+.first legend{
+  margin-left:-50px;
+  padding-bottom:10px;
 }
 .subtitle{
   margin-left:285px;
   padding-left:30px;
    padding-top:50px;
    margin-bottom:10px;
+   font-size:25px;
+   font-weight:bold;
+   text-decoration:underline 3px;
+   text-underline-offset:7px;
 }
 .desc{
   margin-left:300px;
@@ -196,18 +124,13 @@ code{
    padding-right:35px;
    font-size:17px;
    margin-bottom: 20px;
+   line-height:2;
 }
 .second{
   line-height:2;
   padding-top:10px;
    margin-left:50px;
    padding-bottom: 10px;
-}
-#while ul{
-  line-height:2;
-}
-#fun ul{
-   line-height:2;
 }
 footer{
   padding-top:50px;
